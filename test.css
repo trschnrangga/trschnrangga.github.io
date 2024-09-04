@@ -1,0 +1,148 @@
+html, body {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    background-color: rgb(44, 44, 44);
+    background-image: repeating-radial-gradient(circle, #ffffff, #c88bce 0%, #ffb2f7 10%);
+    background-size: 100% 55%;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 450px;
+}
+
+
+.content {
+    margin: auto;
+    width: 1200px;
+}
+
+
+.cintro {
+    color: rgb(242, 175, 223);
+    font-family: 'Nunito', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    span {
+        color: rgb(255, 255, 255);
+    }
+}
+
+.cpara1 {
+    color: rgb(242, 175, 223);
+    font-family: 'Nunito', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-style: normal;
+}
+
+.cpara1 span {
+    font-style: italic;
+    font-weight: 700;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: auto;
+    height: 300px;
+    border: 8px solid rgb(255, 161, 246);
+    box-shadow: 0 4px 50px 0px;
+}
+
+.projects {
+    color: rgb(242, 175, 223);
+    font-family: 'Nunito';
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+}
+
+.projects a:link {
+    color:#ffffff;
+}
+
+.projects a:visited {
+    color:#ee7c9c;
+}
+
+.clinks a:link {
+    color: #ffffff;
+}
+
+.clinks a:visited {
+    color: #ffffff;
+}
+
+.clinks a:hover {
+    color: #f69797;
+}
+
+.pictures img{
+    height: 500px;
+    width: auto;
+    margin: 10px;
+}
+
+.socialmedias a {
+    color: #ffffff;
+}
+
+.socialmedias a:hover{
+    color: #ee7c9c;
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-behavior: smooth;
+}
+
+.image-container img{
+    max-width: auto;
+    height: 700px;
+    margin: 10px;
+    box-shadow: 0px 0px 15px 2px #000000;
+    display:flex;
+    transition: 1s ease-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.cat {
+    height: 400px;
+    width: auto;
+    box-shadow: 0px 0px 20px 2px #000000;
+    transition: 0.1s ease-out;
+}
+
+.cat:hover {
+    transform: scale(1.05); /* Slightly enlarge image on hover */
+    transition: transform 0.05s ease-in; /* Smooth transition */
+}
+
+/* Custom scrollbar styling */
+.image-container::-webkit-scrollbar {
+    height: 12px; /* Set the height of the scrollbar for horizontal scrolling */
+}
+
+.image-container::-webkit-scrollbar-track {
+    background: rgba(68, 68, 68, 0); /* Background color of the scrollbar track */
+}
+
+.image-container::-webkit-scrollbar-thumb {
+    background-color: rgba(122, 122, 122, 0.283); /* Color of the scrollbar thumb */
+    border-radius: 20px; /* Round the corners of the scrollbar thumb */
+    border: 3px solid rgba(0, 0, 0, 0); /* Padding around the scrollbar thumb */
+}
