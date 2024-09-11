@@ -8,13 +8,13 @@ body {
     background-size: 100% 55%;
     background-repeat: no-repeat;
     background-position: top;
-    height: 450px;
+    max-height: 400px;
 }
 
 
 .content {
     margin: auto;
-    width: 1200px;
+    width: 50%;
 }
 
 
