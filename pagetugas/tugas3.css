@@ -1,0 +1,59 @@
+
+
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 110, 207);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-inline: 50px;
+}
+
+td {
+    padding: 10px;
+}
+
+.containerlogin{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 50%;
+}
+
+.containerlogin fieldset{
+    width: fit-content;
+}
+
+.containerlogin form{
+    padding: 5%;
+}
+
+.containerlogin label,input{
+    margin-block: 3%;
+}
+
+.containerproduk {
+    padding: 10px;
+}
+
+.containerproduk table{
+    width: fit-content;
+    border-collapse: separate;
+    height: fit-content;
+}
+
+
+.containerproduk table, th, td{
+    border: 1px solid black;
+}
+
+.containerproduk th{
+    background-color: yellow;
+    color: black;
+}
