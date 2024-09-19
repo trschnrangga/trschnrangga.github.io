@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 37, 58);
+            display: block;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .formcontainer{
+            padding: 4%;
+            display: flex;
+            width: fit-content;
+            height: fit-content;
+            background-color: aliceblue;
+            border-radius: 8px;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        .genericinputs input{
+            margin-top: 1.5%;
+            margin-bottom: 1.5%;
+        }
+
+        .radioinputs {
+            margin-top: 2%;
+        }
+
+        .radioinputs input{
+            margin-top: 1%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Unit Kegiatan Mahasiswa ITS</h1>
+    <div class="formcontainer">
+        <form action="#">
+            <div class="genericinputs">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname"><br>
+                <label for="mname">Middlename:</label>
+                <input type="text" id="mname"><br>
+                <label for="lname">Lastname:</label>
+                <input type="text" id="lname"><br>
+            </div>
+
+            <div class="genericinputs">
+                <label for="course">Unit Kegiatan Mahasiswa:</label>
+                <select name="course" id="">
+                    <option value="course">Robotika</option>
+                    <option value="course">Musik</option>
+                    <option value="course">Olahraga</option>
+                </select><br>
+            </div>
+
+            <div class="radioinputs">
+                <label for="gender">Gender:<br></label>
+                <input type="radio" name="gender" value="male">Male<br>
+                <input type="radio" name="gender" value="female">Female<br>
+                <input type="radio" name="gender" value="female">Other<br>
+            </div>
+            
+            <div class="genericinputs">
+                <label for="phonenum">Phone :</label>
+                <input type="text" size="2" maxlength="4"> <input type="text" size="10"><br>
+                
+                <label for="address">Address</label><br>
+                <textarea name="address" id="address" rows="5" cols="60"></textarea><br>
+    
+                <label for="email">Email:</label>
+                <input type="text"><br>
+    
+                <label for="password">Password</label>
+                <input type="password"><br>
+    
+                <label for="passwordverify">Re-type Password:</label>
+                <input type="password"><br>
+    
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
