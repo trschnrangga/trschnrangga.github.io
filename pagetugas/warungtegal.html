@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        body{
+        margin: 0px;
+        padding: 0px;
+        }
+
+        nav{
+            background-color: rgb(74, 160, 189);
+        }
+
+        .logo {
+            font-size: 300%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            padding: 1%;
+            margin-left: 3%;
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .buttons {
+            display: flex;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            background-color: rgb(0, 62, 116);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+        }
+
+        .buttons p {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .buttons a:hover{
+            color: rgb(255, 255, 255);
+        }
+
+        .buttons a{
+            color: rgb(243, 225, 123);
+            text-decoration: none;
+        }
+        
+        article {
+            display: flex;
+            padding: 3%;
+        }
+
+        .makanan p{
+            padding: 2%;
+        }
+
+        .makanan img{
+            border-radius: 8px;
+            object-fit: cover;
+            height: 200px;
+            width: 400px;
+        }
+        
+        .textmakanan {
+            padding: 2%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .textmakanan h1{
+            font-size: 25px;
+
+            span {
+                color: lightcoral;
+            }
+        }
+
+        .textmakanan p{
+            font-weight: lighter;
+        }
+
+        article {
+            height: fit-content;
+            background-color: rgb(255, 254, 190);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            border-radius: 8px;
+        }
+
+        aside {
+            height: 10%;
+            float: right;
+            margin-right: 100px;
+            padding: 2ch;
+            border: 1px 0px 1px black;
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        aside h1{
+            color: rgb(207, 87, 87);
+        }
+
+        .asidesect {
+            margin-top: 10px;
+        }
+
+        footer {
+            padding: 1%;
+            background-color: rgb(0, 62, 116);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>Warung TC Gacor</p>
+        </div>
+        <div class="buttons">
+            <p><a href="#">Beranda</a></p>
+            <p><a href="#">Daftar Masakan</a></p>
+            <p><a href="#">Katering</a></p>
+            <p><a href="#">Tentang</a></p>
+            <p><a href="#">Kontak</a></p>
+        </div>
+    </nav>
+    <section>
+        <aside>
+            <div class="asidesect">
+                <h1>Masakan Populer</h1>
+                <p>Sayur Manis</p>
+                <p>Sate Marangguoy</p>
+                <br><br><br>
+            </div>
+            <div>
+                <h1>Kontak</h1>
+                <p>Warung TC, Warung Terbaik DI INDO</p>
+                <p>+62 0819111111</p>
+            </div>
+    
+        </aside>
+        <article>
+            <div class="makanan">
+                <img src="gambar/ayampecel.jpg" alt="">
+            </div>
+            <div class="textmakanan">
+                <div class="!">
+                    <h1>Pecel Ayam<br><span>Makanan Gacor</span></h1>
+                </div>
+                <p>Pecel Ayam Adalah Makanan gacor yang ada di warung tc gacor</p>
+            </div>
+        </article>
+        <article>
+            <div class="makanan">
+                <img src="gambar/sotoayam.jpg" alt="">
+            </div>
+            <div class="textmakanan">
+                <div class="!">
+                    <h1>Soto Ayam<br><span>Makanan Kuah Gacor</span></h1>
+                </div>
+                <p>Soto Ayam terbaik di TC!</p>
+            </div>
+        </article>
+        <article>
+            <div class="makanan">
+                <img src="gambar/sate.jpg" alt="">
+            </div>
+            <div class="textmakanan">
+                <div class="!">
+                    <h1>Sate Marangguoy<br><span>Makanan Tusuk Gacor</span></h1>
+                </div>
+                <p>Sate Paling Gacor kata anak-anak TC</p>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <p>@WARUNGTCGACOR Copyright</p>
+    </footer>
+</body>
+</html>
