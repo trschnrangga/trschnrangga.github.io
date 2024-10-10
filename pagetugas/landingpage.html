@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <style>
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: rgb(20, 20, 20);
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 3rem;
+            align-items: center;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+        }
+        
+        .logo img{
+            width: 60px;
+            height: auto;
+            padding: 10%;
+            transition: 0.2s ease-out;
+        }
+        
+        .logo img:hover{
+            width: 60px;
+            height: auto;
+            padding: 10%;
+            transform: scale(1.1); /* Slightly enlarge image on hover */
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .items {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+        
+        .items a{
+            display: inline-block;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            transition: transform 0.3s ease; /* Smooth transition */
+        }
+
+        .items a:hover{
+            text-decoration: none;
+            color: rgb(129, 255, 70);
+            transform: scale(1.1);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        button {
+            font-size: 2rem;
+            padding: 0.1rem 1rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            background-color: rgb(0, 0, 0);
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            cursor: pointer;
+            border: none;
+            transition: 0.3s ease-out;
+        }
+
+        button:hover{
+            color: rgb(129, 255, 70);
+            transform: scale(1.1);
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 0.5fr;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            padding: 2%;
+        }
+
+        .short-info {
+            color: rgb(129, 255, 70);
+            font-size: 1rem;
+            margin-bottom: 0.9rem;
+        }
+
+        .hero-heading {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .hero-sub-heading {
+            color: gray;
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+
+        .learn-more {
+            padding: 0.5rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+            width: fit-content;
+            
+        }
+
+        .learnmorespace {
+            display: flex;
+        }
+
+        .pic {
+            height: 300px;
+            width: auto;
+            color: white;
+            justify-content: right;
+        }
+
+        .users {
+            display: grid;
+            align-items: center;
+            margin: 3rem 0px;
+        }
+        .user {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid rgb(129, 255, 70);
+        }
+
+        .usersnbutton {
+            padding: 2%;
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: left; /* Center avatars and button */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="gambar/cloud-svgrepo-com.png" alt=""></a>
+            </div>
+            <div class="items">
+                <h1><a style="color: rgb(129, 255, 70);" href="#">Home</a></h1>
+                <h1><a href="#">About</a></h1>
+                <h1><a href="#">Services</a></h1>
+                <h1><a href="#">Contact</a></h1>
+            </div>
+            <div>
+                <button>login.</button>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="info">
+                    <p class="short-info">get many bonuses with your first purchase!</p>
+                    <h2 class="hero-heading">
+                        Safely store your files anytime,<br> anywhere
+                    </h2>
+                    <p class="hero-sub-heading">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id tincidunt eifend odio viverra diam aliquet donec again.
+                    </p>
+                </div>
+                <img class="pic" src="gambar/cloud-data-svgrepo-com.png" alt="">
+                <div class="usersnbutton">
+                    <div class="users">
+                        <div>
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MTM4Nzk&ixlib=rb-1.2.1&q=80" class="img-fluid user">
+                            <img src="https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MTM4Nzk&ixlib=rb-1.2.1&q=80" class="img-fluid user">
+                            <img src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MTM4Nzk&ixlib=rb-1.2.1&q=80" class="img-fluid user">
+                            <img src="https://images.unsplash.com/photo-1534614971-6be99a7a3ffd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTg0MTM4Nzk&ixlib=rb-1.2.1&q=80" class="img-fluid user">
+                        </div>
+                        <div>
+                            <p style="color: white;">4M+ users</p>
+                        </div>
+                    </div>
+                    <div class="learnmorespace">
+                        <button class="learn-more">learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
