@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        color: #000000;
+        background-color: rgb(245, 245, 245);
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header {
+        width: 100vw;
+        height: fit-content;
+        padding: 1.5%;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+
+    .logo h1{
+        font-size: 1.5vw;
+    }
+
+    .navopt {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 2vw;
+    }
+
+    .navopt a{
+        font-size: 1vw;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        transition: all 0.3s ease;
+    }
+
+    .navopt a:hover{
+        transition: ease-in;
+        text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .navbtn {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .navbtn button{
+        width: max-content;
+        align-items: center;
+        font-size: 1vw;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+    }
+
+    .gridcontainer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        display: grid;
+        gap: 10rem;
+        padding: 10%;
+    }
+
+    .topleft p{
+        font-size: 1vw;
+        margin-top: 2%;
+    }
+
+    .topleft span {
+        font-weight: bold;
+    }
+
+    .topleft h1{
+        display: inline-block;
+        width: fit-content;
+        border-right: 2px solid black;
+        overflow: hidden;
+        font-size: 1.5vw;
+        white-space: nowrap;
+        width: 0;
+        animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+    }
+
+     @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    @keyframes blink {
+        from, to { border-color: transparent; }
+        50% { border-color: black; }
+    }
+    
+    .hotdeals {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+
+    .topright {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        background-color: #ffffff; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        text-align: center; 
+    }
+
+    
+    .topright img {
+        width: 20vw;
+        height: auto;
+        border-start-start-radius: 10px;
+        border-end-start-radius: 10px;
+    }
+
+    .text-card {
+        padding: 5%;;
+    }
+
+    .text-card p {
+        font-size: 1vw;
+    }
+
+    .text-card button {
+        margin-top: 1vw;
+        width: max-content;
+        align-items: center;
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        color: white;
+        background-color: rgb(0, 0, 0);
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s ease-out;
+    }
+
+    .footerlinks {
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footerlinks a{
+        font-size: 1vw;
+        text-decoration: none;
+        font-weight: 300    ;
+        color: gray;
+    }
+
+    @media (max-width: 1535px) {
+
+        .realtopright {
+            display: none;
+        }
+
+        .gridcontainer {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+
+        .topleft h1 {
+            font-size: 3vw; 
+            width: 100%;
+            white-space: nowrap;
+            animation: typing-small 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+        }
+    }
+
+    @keyframes typing-small {
+        from { width: 0; }
+        to { width: 100%; }
+
+}
+
+    </style>
+</head>
+<body>
+    <div>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1>CODELRN.</h1>
+                </div>
+                <div class="navopt">
+                    <a href="#">Home</a>
+                    <a href="#">Roadmap</a>
+                    <a href="#">Courses</a>
+                    <a href="#">Subscription</a>
+                    <a href="#">Profile</a>
+                </div>
+                <div class="navbtn">
+                    <button>Login</button>
+                    <button>Sign Up</button>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <article>
+        <div class="gridcontainer">
+            <div class="topleft">
+                <h1>Tired of not knowing how to start on your IT journey?</h1>
+                <p>Come join our course where we dissect every career opportunity in IT <br> that you are interested in,
+                from Fullstack, Cybersecurity, Data Engineer, AI Engineer, <br> you name it! <br></p>
+                <p>But wait a minute, <br>We can make your own <span>personalized roadmap</span> on what to do, and we also will charge accordingly!</h2>
+            </div>
+            <div class="realtopright">
+                <div class="hotdeals">
+                    <h3>Hot Deals Today</h3>
+                </div>
+                <div class="topright">
+                    <img src="gambar/codinghtml.jpg" alt="">
+                    <div class="text-card">
+                        <h3>Fullstack Guide 50% OFF</h3>
+                        <p>Jumpstart your fullstack career with this complete guide</p>
+                        <button>Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="footerlinks">
+            <a href="#">Instagram</a>
+            <a href="#">X/Twitter</a>
+            <a href="#">Youtube</a>
+            <a href="#">Facebook</a>
+        </div>
+    </footer>
+</body>
+</html>
