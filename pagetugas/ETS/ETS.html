@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickConnect | Your Network Needs</title>
+    <style>
+        body{
+            font-family: 'Inter', sans-serif;
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .logo{
+            display: flex;
+            margin-right: 10vw;
+        }
+
+        .navbar {
+            z-index: 2;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+            padding: 1%;
+            display: flex;
+            gap: 20vw;
+            align-items: center;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+        }
+
+        .navigation {
+            font-size: 1vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10vw;
+        }
+
+        .navigation a{
+            text-decoration: none;
+            color: black;
+            transition: ease-out 0.5s;
+        }
+
+        .navigation a:hover{
+            text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+            transition: ease-in 0.2s;
+            scale: 103%;
+        }
+
+        .gridcontainer{
+            margin-top: 5%;
+            padding: 7%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .information{
+            width: 40vw;
+            justify-content: center;
+
+            h1{
+                font-size: 4vw;
+            }
+
+            h2{
+                margin-top: 2%;
+                font-weight:normal;
+                font-size: 1vw;
+            }
+        }
+
+        .buttons{
+            margin-top: 6%;
+            display: flex;
+            gap: 5%;
+
+            button{
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                width: 10vw;
+                height: auto;
+                padding: 2%;
+                font-size: 1.25vw;
+                border-radius: 100px;
+                border-color: black;
+                transition: ease-in-out 0.1s;                
+            }
+
+            button:hover{
+                background-color: black;
+                color: white;
+            }
+            
+        }
+
+
+        .router{
+            position: relative;
+            top: -250px;
+        }
+
+        .form{
+            h2{
+                font-size: 3vw;
+            }
+
+        }
+        form{
+            p{
+                font-size: 24px;
+            }
+
+            input{
+                padding: 1.5%;
+                border-radius: 100px;
+                border-color: black;
+                font-size: 24px;
+                transition: ease-in-out 0.1s;
+            
+            }
+            input:focus{
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+            }
+            input::-webkit-outer-spin-button,
+            input::-webkit-inner-spin-button {
+             -webkit-appearance: none;
+            }
+        }
+
+        select{ 
+            justify-content: center;
+            width: 314px;
+            padding: 1.5%;
+            border-radius: 100px;
+            border-width: thin;
+            border-color: black;
+            font-size: 24px;
+            transition: ease-in-out 0.1s;
+            appearance: none;
+            
+        }
+
+        .submitbtn{
+            margin-top: 5%;
+
+            button{
+                background-color: white;
+                width: 206px;
+                height: 68px;
+                padding: 2%;
+                font-size: 24px;
+                border-radius: 100px;
+                border-color: black;
+                transition: ease-in-out 0.1s;                
+            }
+
+            button:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+
+        .footer{
+            padding: 2%;
+            display: flex;
+            justify-content: space-between;
+            color: gray;
+
+            a{
+                text-decoration: none;
+                color: gray;
+
+            }
+
+            a:hover{
+                color: black;
+            }
+        }
+
+        @media (max-width: 1528px){
+            .gridcontainer{
+                margin-top: 410px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                justify-content: center;
+                width: fit-content;
+            }
+
+            .router{
+                z-index: -1;
+                top: -950px;
+                rotate: -13deg;
+            }
+        }
+
+        @media (max-width: 390px){
+            .logo{
+                margin-right: 2%;
+                
+                img{
+                    width: 30px;
+                    height: auto;
+                }
+            }
+
+            .navigation{
+                font-size: 12px;
+                gap: 20px;
+            }
+
+            .information{
+            width: fit-content;
+            justify-content: center;
+
+                h1{
+                    font-size: 20px;
+                }
+
+                h2{
+                    margin-top: 2%;
+                    font-weight:normal;
+                    font-size: 10px;
+                }
+            }
+
+            .gridcontainer{
+                margin-top: 250px;
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+                align-items: center;
+            }
+
+            .router{
+                position: absolute;
+                z-index: -1;
+                top: 60px;
+                rotate: -13deg;
+                align-items: center;
+                justify-items: center;
+
+                img{
+                    width: 300px;
+                    height: auto;
+                }
+            }
+
+            .buttons{
+            margin-top: 6%;
+            display: flex;
+            gap: 5%;
+
+                button{
+                    justify-content: center;
+                    align-items: center;
+                    background-color: white;
+                    width: 30vw;
+                    padding: 2%;
+                    font-size: 3vw;
+                    border-radius: 100px;
+                    border-color: black;
+                    transition: ease-in-out 0.1s;                
+                }
+
+                button:hover{
+                    background-color: black;
+                    color: white;
+                }
+            
+            }
+
+            .form{
+                margin-top: 20%;
+                h2{
+                    font-size: 4vw;
+                }
+
+            }
+            form{
+                p{
+                    font-size: 3vw;
+                }
+
+                input{
+                    padding: 1.5%;
+                    border-radius: 100px;
+                    border-color: black;
+                    font-size: 3vw;
+                    transition: ease-in-out 0.1s;
+                
+                }
+                input:focus{
+                    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+                }
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                }
+            }
+
+            select{ 
+                justify-content: center;
+                width: fit-content;
+                padding: 1.5%;
+                border-radius: 100px;
+                border-width: thin;
+                border-color: black;
+                font-size: 3vw;
+                transition: ease-in-out 0.1s;
+                appearance: none;
+                
+            }
+
+            .submitbtn{
+                margin-top: 5%;
+
+                button{
+                    background-color: white;
+                    padding: 2%;
+                    width: 30vw;
+                    height: auto;
+                    font-size: 3vw;
+                    border-radius: 100px;
+                    border-color: black;
+                    transition: ease-in-out 0.1s;                
+                }
+
+                button:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+
+            .footer{
+                padding: 2%;
+                display: block;
+                justify-content: space-between;
+                color: gray;
+
+                p{
+                    font-size: 10px;
+                }
+
+                a{
+                    text-decoration: none;
+                    color: gray;
+                    font-size: 10px;
+                    
+                }
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="resource/logoCLICKCONNECT.png" alt="">
+        </div>
+        <div class="navigation">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+    <article class="gridcontainer">
+        <div class="information">
+            <h1>The All New <br>
+                RT6600ax Router</h1>
+            <h2>A powerful tri-band Wi-Fi 6 router capable of 
+                delivering 6.6 Gbps of combined wireless throughput 
+                and equipped to support plenty of VPN 
+                server connections and 
+                Wi-FI SSIDs.</h2>
+                <div class="buttons">
+                    <button class="buy">Buy Now</button>
+                    <button class="product">Product Page</button>
+                </div>
+        </div>
+        <div class="router">
+            <img src="resource/router.png" alt="">
+        </div>
+        <div class="form">
+            <h2>Become a Member!</h2>
+            <form action="#">
+                <p><br>Name</p>
+                <input id="name" type="text" placeholder="Anthony">
+                <p><br> Email</p>
+                <input id="email" type="email" placeholder="anthony@gmail.com">
+                <p><br>Phone Number</p>
+                <input id="phonenum" type="number" placeholder="819232030" >
+                <p><br>Gender</p>
+                <select name="gender" id="">
+                    <option value="unselected">Select one</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="unspecified">Prefer to not say</option>
+                </select>
+                <div class="submitbtn">
+                    <button>Submit</button>
+                </div>
+            </form>
+        </div>
+    </article>
+    <footer class ="footer">
+        <p>Jl Jend Sudirman 28 Wisma GKBI Lt 17 Suite 1718,  DKI Jakarta</p>
+        <a href="#">Instagram</a>
+        <a href="#">Tokopedia</a>
+        <a href="#">Facebook</a>
+    </footer>
+    <script src="ets.js"></script>
+</body>
+</html>
