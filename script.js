@@ -36,3 +36,21 @@ function smoothScroll(element, delta) {
 function easeInOutQuad(t) {
     return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
 }
+
+// Array of image URLs to preload
+const imagesToPreload = [
+    'pictures/ranggaz.jpeg',
+    'pictures/bluelilyinv.jpg',
+    'pictures/tylers.jpg',
+    'pictures/indecisive.jpg',
+    'pictures/homuncbw.jpg',
+    'pictures/homuncw.jpg',
+    'pictures/LIGHTOKUN1.jpg',
+    // Add more image URLs here
+];
+
+// Preload images
+imagesToPreload.forEach((url) => {
+    const img = new Image();  // Create a new Image object
+    img.src = url;            // Set the image source to preload the image
+});
