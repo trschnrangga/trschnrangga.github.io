@@ -56,7 +56,11 @@ include 'config.php';
             }
         ?>
     </table>
-    <h2>List of Employee</h2>
+    <br><br>
+    <form action="generate_student_pdf.php" method="get" target="_blank">
+        <button type="submit">Download Student List as PDF</button>
+    </form>
+    <br><br><h2>List of Employee</h2>
     <table>
         <tr>
             <th>ID</th>
